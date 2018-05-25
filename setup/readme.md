@@ -34,6 +34,7 @@ correctly.
    and write below the URL to your fork of the GitHub repository, and the add and commit:
 
    My Weekly Problems repository URL:
+   https://github.com/katieediger/weekly-problems
 
 4. Next, push your commit to GitHub. Run `git push origin master` from your command line.
 
