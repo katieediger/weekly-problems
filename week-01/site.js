@@ -55,7 +55,7 @@ members.addEventListener('click', function(e) {
 
     // TODO: Somehow isolate the last chunk of the GitHub profile URL, which contains the username
     // https://github.com/<username>. The full URL is a string at `e.target.href`:
-    username = '';
+    username = e.target.href.split('/').pop();
 
     // Diagnostic: log the username value
     console.log('Username value:', username);
@@ -73,7 +73,7 @@ members.addEventListener('click', function(e) {
 
     // This block commented with stars so you can get things above working first:
 
-    /*
+
     fetch(request_url)
       .then(function(data) {
         // Parse the returned data as JSON:
@@ -87,6 +87,5 @@ members.addEventListener('click', function(e) {
         // append it to the profile `<blockquote id="profile">`
         // TODO: Display the username (`login`) in case a team member has not set a profile name
       });
-    */
   }
 });
